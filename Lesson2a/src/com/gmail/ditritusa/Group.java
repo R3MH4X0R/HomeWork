@@ -30,7 +30,6 @@ public class Group {
 
 		}
 		if (isFull >= arrayOfStudents.length) {
-			isFull = 0;
 			throw new StudentIndexOutOfBoundsException();
 		}
 
