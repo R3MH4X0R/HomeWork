@@ -20,8 +20,8 @@ public class Group {
 		return arrayOfStudents;
 	}
 
-	public void addStudent(Object o) throws StudentIndexOutOfBoundsException {
-		Student temp = (Student) o;
+	public void addStudent(Student st) throws StudentIndexOutOfBoundsException {
+		Student temp = (Student) st;
 		int isFull = 0;
 		for (int i = 0; i < arrayOfStudents.length; i++) {
 			if (arrayOfStudents[i] != null) {
@@ -42,8 +42,8 @@ public class Group {
 
 	}
 
-	public void deleteStudent(Object o) {
-		Student temp = (Student) o;
+	public void deleteStudent(Student st) {
+		Student temp = (Student) st;
 		int counter = 0;
 		for (Student student : arrayOfStudents) {
 			if (this.arrayOfStudents[counter] == temp & this.arrayOfStudents[counter] == student & temp != null) {
